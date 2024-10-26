@@ -1,0 +1,17 @@
+The Odin Project: library
+https://www.theodinproject.com/lessons/node-path-javascript-library/project_submissions
+
+
+Verion One - Basic Function
+- Add New Nook 
+- Edit Book, and Save It
+- Delete Book
+- Save Data to User Browser
+
+
+Need to Improve:
+1/ add reading status feature;
+2/ when edit content, need to check content (eg. no duplicated name);
+3/ dialog css position
+4/ click enter as submit
+

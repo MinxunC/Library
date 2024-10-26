@@ -1,0 +1,149 @@
+
+
+html{
+    background-color: #F6E6CB;
+    padding: 0;
+}
+
+.heading{
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 2000px;
+    background-color: #F6E6CB;;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: cenetr;
+}
+
+h1{
+    margin: 0;
+    display: inline;
+    align-self: center;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+.heading>button{
+    margin-top: 10px;
+    position: absolute;
+    left:60%;   
+    margin-left: 40px;
+    height: 30px;
+}
+
+.books-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.book-container{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: #D1BB9E;
+    position: relative;
+}
+
+.book-container hr{
+    position: absolute;
+    top: 15px;
+}
+
+h2{
+    display: inline;
+}
+
+.delete-btn,
+.edit-btn{
+    height:40px;
+    position: absolute;
+    color: white;
+    margin-right: 10px;
+}
+
+.save-btn{
+    right:70px;
+    position: absolute;
+    color: white;
+    background-color: green;
+    display: none;
+}
+
+
+.delete-btn{
+    right: 5px;
+}
+
+.edit-btn{
+    right: 25px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover{
+    color: #F6E6CB;
+}
+
+dialog{
+    width:700px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border: 5px;
+}
+
+dialog::backdrop {
+    background: #A0937D;
+    opacity: 0.9;
+}
+
+dialog>div{
+    display: flex;
+    flex-direction: column;
+}
+
+dialog label{
+    font-size: larger;
+    margin-top: 20px;
+}
+
+dialog button{
+    margin-top: 100px;
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    align-self: center;
+}
+
+dialog button:hover{
+    background-color: #D1BB9E;
+}
+
+#readingStatus{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+#duplicated-book-message,
+#empty-book-name-warning-message,
+#page-warning-message,
+#max-book-length-message,
+#max-author-length-message{
+    display: none;
+    color: red;
+} 

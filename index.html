@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Library</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>My Library</h1>
+        <button id="add-book-button">New Book</button>
+    </div>
+
+    <div class="books-container">
+        <!-- new book will be added here -->
+    </div>
+    <dialog>
+        <div>
+            <label for="book-name-answer">Book:</label>
+            <input type="text" max="20" required id="book-name-answer" />
+            <span id='duplicated-book-message'>We have this book in the library. Please enter a different book.</span>
+            <span id='empty-book-name-warning-message'>Please enter a book name.</span>
+            <span id='max-book-length-message'>Please enter less than 40 character.</span>
+            <label for="author-name-answer">Author:</label>
+            <input type="text" id="author-name-answer" />
+            <span id='max-author-length-message'>Please enter less than 30 character.</span>
+            <!-- <label for="read-status">Readng Status:</label>
+            <select id="read-status">
+                <option value="unread">Unread</option>
+                <option value="reading">Reading</option>
+                <option value="completed">Completed</option>
+            </select> -->
+            <label for="page-num-answer">Page:</label>
+            <input type="number" id="page-num-answer" />
+            <span id='page-warning-message'>Sorry, the page number at least 1.</span>
+            <button id="submit-btn">Submit</button>
+        </div>
+    </dialog>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
